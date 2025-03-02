@@ -1,0 +1,266 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml
+10
+11    <!-- Permissions should be declared here, outside the <application> tag -->
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:5:5-78
+12-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:6:5-80
+13-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:6:22-78
+14
+15    <!-- Required to query activities that can process text -->
+16    <queries>
+16-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:9:5-14:15
+17        <intent>
+17-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:10:9-13:18
+18            <action android:name="android.intent.action.PROCESS_TEXT" />
+18-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:11:13-72
+18-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:11:21-70
+19
+20            <data android:mimeType="text/plain" />
+20-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:12:13-50
+20-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:12:19-48
+21        </intent>
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+24    </queries>
+25    <!-- Include required permissions for Google Maps API to run. -->
+26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+26-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+26-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:5-67
+27-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:24:22-64
+28
+29    <uses-feature
+29-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+30        android:glEsVersion="0x00020000"
+30-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+31        android:required="true" />
+31-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+32
+33    <permission
+33-->[androidx.core:core:1.13.1] C:\Users\sandh\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.flutter_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.13.1] C:\Users\sandh\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.13.1] C:\Users\sandh\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+36
+37    <uses-permission android:name="com.example.flutter_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.13.1] C:\Users\sandh\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.13.1] C:\Users\sandh\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+38
+39    <application
+40        android:name="android.app.Application"
+40-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:18:9-42
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.13.1] C:\Users\sandh\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+42        android:icon="@mipmap/ic_launcher"
+42-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:19:9-43
+43        android:label="flutter_app" >
+43-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:17:9-36
+44
+45        <!-- MainActivity definition -->
+46        <activity
+46-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:22:9-41:20
+47            android:name="com.example.flutter_app.MainActivity"
+47-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:23:13-41
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+48-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:27:13-163
+49            android:exported="true"
+49-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:24:13-36
+50            android:hardwareAccelerated="true"
+50-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:28:13-47
+51            android:launchMode="singleTop"
+51-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:25:13-43
+52            android:theme="@style/LaunchTheme"
+52-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:26:13-47
+53            android:windowSoftInputMode="adjustResize" >
+53-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:29:13-55
+54
+55            <!-- Specifies the theme for the Activity -->
+56            <meta-data
+56-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:32:13-34:56
+57                android:name="io.flutter.embedding.android.NormalTheme"
+57-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:33:17-72
+58                android:resource="@style/NormalTheme" />
+58-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:34:17-54
+59
+60            <!-- Intent filter to launch the main activity -->
+61            <intent-filter>
+61-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:37:13-40:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:38:17-68
+62-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:38:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:39:17-76
+64-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:39:27-74
+65            </intent-filter>
+66        </activity>
+67
+68        <!-- Flutter-related meta-data -->
+69        <meta-data
+69-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:44:9-46:32
+70            android:name="flutterEmbedding"
+70-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:45:13-44
+71            android:value="2" />
+71-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:46:13-30
+72
+73        <!-- Google Maps API Key meta-data -->
+74        <meta-data
+74-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:49:9-51:70
+75            android:name="com.google.android.geo.API_KEY"
+75-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:50:13-58
+76            android:value="AIzaSyChQlTwF17NdTOQ9P-KZCMKc286TnNdHLI" />
+76-->D:\D Drive\SIH Software\SIH Software\android\app\src\main\AndroidManifest.xml:51:13-68
+77
+78        <provider
+78-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-19:20
+79            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+79-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-82
+80            android:authorities="com.example.flutter_app.flutter.image_provider"
+80-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-74
+81            android:exported="false"
+81-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+82            android:grantUriPermissions="true" >
+82-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-47
+83            <meta-data
+83-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-18:75
+84                android:name="android.support.FILE_PROVIDER_PATHS"
+84-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-67
+85                android:resource="@xml/flutter_image_picker_file_paths" />
+85-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:18:17-72
+86        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+87        <service
+87-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33:19
+88            android:name="com.google.android.gms.metadata.ModuleDependencies"
+88-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-78
+89            android:enabled="false"
+89-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-36
+90            android:exported="false" >
+90-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+91            <intent-filter>
+91-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-28:29
+92                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+92-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-94
+92-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-91
+93            </intent-filter>
+94
+95            <meta-data
+95-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-32:36
+96                android:name="photopicker_activity:0:required"
+96-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-63
+97                android:value="" />
+97-->[:image_picker_android] D:\D Drive\SIH Software\SIH Software\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:32:17-33
+98        </service> <!-- Needs to be explicitly declared on P+ -->
+99        <uses-library
+99-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+100            android:name="org.apache.http.legacy"
+100-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+101            android:required="false" />
+101-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\sandh\.gradle\caches\transforms-3\134ddd8ff050f3af3828456e701f6199\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+102
+103        <activity
+103-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sandh\.gradle\caches\transforms-3\05d1435684861c80b7352010f3878dca\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+104            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+104-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sandh\.gradle\caches\transforms-3\05d1435684861c80b7352010f3878dca\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+105            android:exported="false"
+105-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sandh\.gradle\caches\transforms-3\05d1435684861c80b7352010f3878dca\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+106-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sandh\.gradle\caches\transforms-3\05d1435684861c80b7352010f3878dca\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+107
+108        <meta-data
+108-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\sandh\.gradle\caches\transforms-3\8a44e3ec56e942ca26fe6c430801b79d\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+109            android:name="com.google.android.gms.version"
+109-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\sandh\.gradle\caches\transforms-3\8a44e3ec56e942ca26fe6c430801b79d\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+110            android:value="@integer/google_play_services_version" />
+110-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\sandh\.gradle\caches\transforms-3\8a44e3ec56e942ca26fe6c430801b79d\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+111
+112        <uses-library
+112-->[androidx.window:window:1.2.0] C:\Users\sandh\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+113            android:name="androidx.window.extensions"
+113-->[androidx.window:window:1.2.0] C:\Users\sandh\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+114            android:required="false" />
+114-->[androidx.window:window:1.2.0] C:\Users\sandh\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+115        <uses-library
+115-->[androidx.window:window:1.2.0] C:\Users\sandh\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+116            android:name="androidx.window.sidecar"
+116-->[androidx.window:window:1.2.0] C:\Users\sandh\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+117            android:required="false" />
+117-->[androidx.window:window:1.2.0] C:\Users\sandh\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+118
+119        <provider
+119-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+120            android:name="androidx.startup.InitializationProvider"
+120-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+121            android:authorities="com.example.flutter_app.androidx-startup"
+121-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+122            android:exported="false" >
+122-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+123            <meta-data
+123-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+124                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+125                android:value="androidx.startup" />
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\sandh\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+126            <meta-data
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+128                android:value="androidx.startup" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+129        </provider>
+130
+131        <receiver
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+132            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+133            android:directBootAware="false"
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+134            android:enabled="true"
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+135            android:exported="true"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+136            android:permission="android.permission.DUMP" >
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+138                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+141                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+144                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+147                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\sandh\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+148            </intent-filter>
+149        </receiver>
+150    </application>
+151
+152</manifest>
